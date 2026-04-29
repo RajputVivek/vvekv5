@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivek K — Senior UI Developer</title>
+  <meta name="description" content="Vivek K — Senior UI Developer with 4+ years building production-grade interfaces at scale. React, HTML5, CSS3, JavaScript specialist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">VK</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>VK<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Work</a></li>
+        <li><a href="#building"   class="nav-link">Building</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about"      class="mobile-link">About</a>
+      <a href="#skills"     class="mobile-link">Skills</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#projects"   class="mobile-link">Work</a>
+      <a href="#building"   class="mobile-link">Building</a>
+      <a href="#contact"    class="mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section id="hero">
+      <canvas id="particles-canvas"></canvas>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+
+      <div class="hero-inner">
+
+        <!-- Left: copy -->
+        <div class="hero-copy">
+          <div class="hero-badge reveal-up">
+            <span class="badge-pulse"></span>
+            Available for new opportunities
+          </div>
+
+          <h1 class="hero-title reveal-up">
+            <span class="hero-hi">Hey, I'm</span>
+            <span class="hero-name">Vivek K.</span>
+          </h1>
+
+          <p class="hero-role reveal-up">
+            I craft <span id="typed-text" class="typed-word">pixel-perfect UIs</span><span class="type-cursor">|</span>
+          </p>
+
+          <p class="hero-bio reveal-up">
+            Senior UI Developer with 4+ years turning complex ideas into
+            pixel-perfect, high-performance web experiences.
+          </p>
+
+          <!-- Hero impact bar -->
+          <div class="hero-impact reveal-up">
+            <div class="impact-chip"><span class="ic-num">40%</span><span class="ic-label">Bundle size reduction</span></div>
+            <div class="impact-divider"></div>
+            <div class="impact-chip"><span class="ic-num">20+</span><span class="ic-label">Modules shipped</span></div>
+            <div class="impact-divider"></div>
+            <div class="impact-chip"><span class="ic-num">4+</span><span class="ic-label">Years in production</span></div>
+          </div>
+
+          <div class="hero-btns reveal-up">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> View My Work</a>
+            <a href="#contact"  class="btn btn-outline"><i class="fas fa-paper-plane"></i> Let's Talk</a>
+          </div>
+
+          <div class="hero-socials reveal-up">
+            <a href="https://github.com/"    target="_blank" rel="noopener" class="soc-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="soc-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/"   target="_blank" rel="noopener" class="soc-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:hello@vvek.dev"  class="soc-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: avatar -->
+        <div class="hero-avatar reveal-right">
+          <div class="avatar-frame">
+            <div class="avatar-blob">
+              <img src="images/vivek-photo.jpg" alt="Vivek K — UI Developer" class="avatar-photo" />
+            </div>
+            <div class="avatar-ring r1"></div>
+            <div class="avatar-ring r2"></div>
+            <div class="avatar-tag tag-react"><i class="fab fa-react"></i> React</div>
+            <div class="avatar-tag tag-css"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="avatar-tag tag-js"><i class="fab fa-js-square"></i> JS</div>
+          </div>
+        </div>
+
+      </div><!-- /.hero-inner -->
+
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">01 — Who I Am</span>
+          <h2 class="sec-title">Designing at the intersection of<br /><em>craft</em> and <em>code</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p class="about-lead">
+              I'm a <strong>UI Developer</strong> who cares deeply about the quality of what I ship — not just whether it works, but whether it <em>feels right</em> to the person using it.
+            </p>
+            <p>
+              Over the past 4+ years at <strong>Select10X</strong>, I've owned the entire frontend of an AI-powered assessment and hiring platform — from architecture decisions to the last pixel. I've built, iterated, and scaled interfaces used by hiring managers and candidates across India, all without a dedicated design team.
+            </p>
+            <p>
+              That means I've learned to <strong>think like a designer, move like an engineer, and communicate like a product person.</strong> I bring that rare combination to every project I work on.
+            </p>
+            <p>
+              When I'm not pushing pixels, I'm exploring design systems, experimenting with CSS animations, or thinking about how to make digital interactions feel more human.
+            </p>
+            <div class="about-actions">
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-download"></i> Download Resume</a>
+              <a href="#experience" class="btn btn-outline btn-sm">See My Journey <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="about-right reveal-right">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-num" data-count="4">0</div>
+                <div class="stat-plus">+ Years</div>
+                <div class="stat-desc">Professional Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num" data-count="20">0</div>
+                <div class="stat-plus">+ Projects</div>
+                <div class="stat-desc">Shipped to Production</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num" data-count="40">0</div>
+                <div class="stat-plus">% Less</div>
+                <div class="stat-desc">Bundle After Migration</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num" data-count="100">0</div>
+                <div class="stat-plus">%</div>
+                <div class="stat-desc">Ownership Mindset</div>
+              </div>
+            </div>
+            <div class="p-tags">
+              <span class="p-tag"><i class="fas fa-palette"></i> Design-minded</span>
+              <span class="p-tag"><i class="fas fa-bolt"></i> Performance-obsessed</span>
+              <span class="p-tag"><i class="fas fa-users"></i> Team player</span>
+              <span class="p-tag"><i class="fas fa-cube"></i> Systems thinker</span>
+              <span class="p-tag"><i class="fas fa-graduation-cap"></i> Self-taught designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== HOW I THINK ====== -->
+    <section id="thinking" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">02 — How I Think</span>
+          <h2 class="sec-title">The principles that shape<br /><em>every decision I make</em></h2>
+          <p class="sec-sub">These aren't buzzwords. They're the mental models I apply every day when building interfaces people actually use.</p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-card reveal-up" data-delay="0">
+            <div class="pc-num">01</div>
+            <div class="pc-icon"><i class="fas fa-eye"></i></div>
+            <h3>Clarity over visual noise</h3>
+            <p>Every element I add must earn its place. If a user has to think about what something does, I've already failed. Good UI makes the obvious feel inevitable.</p>
+            <div class="pc-tag">UX Principle</div>
+          </div>
+          <div class="principle-card reveal-up" data-delay="100">
+            <div class="pc-num">02</div>
+            <div class="pc-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Systems over one-offs</h3>
+            <p>I don't build pages — I build systems. Every component I write is reusable, every token I set is consistent, because the next feature should be faster to ship, not slower.</p>
+            <div class="pc-tag">Engineering Principle</div>
+          </div>
+          <div class="principle-card reveal-up" data-delay="200">
+            <div class="pc-num">03</div>
+            <div class="pc-icon"><i class="fas fa-users"></i></div>
+            <h3>UX driven by real usage</h3>
+            <p>I obsess over how real users interact — not how we imagine they will. Feedback loops, error states, loading skeletons, and edge cases are features, not afterthoughts.</p>
+            <div class="pc-tag">Product Principle</div>
+          </div>
+          <div class="principle-card reveal-up" data-delay="0">
+            <div class="pc-num">04</div>
+            <div class="pc-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <h3>Performance as design</h3>
+            <p>A slow interface is a broken interface. Load time, render performance, and interaction latency are design constraints, not technical footnotes. Speed is part of the product.</p>
+            <div class="pc-tag">Performance Principle</div>
+          </div>
+          <div class="principle-card reveal-up" data-delay="100">
+            <div class="pc-num">05</div>
+            <div class="pc-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+            <h3>Build for the next person</h3>
+            <p>Code I write today will be read by someone else tomorrow. I write for clarity, add comments that explain intent, and structure features so future developers move faster, not slower.</p>
+            <div class="pc-tag">Engineering Principle</div>
+          </div>
+          <div class="principle-card reveal-up" data-delay="200">
+            <div class="pc-num">06</div>
+            <div class="pc-icon"><i class="fas fa-comments"></i></div>
+            <h3>Ship, then refine</h3>
+            <p>Working software beats perfect plans. I push a v1 that solves the real problem, gather feedback, then improve. Iteration beats planning in circles. Done is better than perfect.</p>
+            <div class="pc-tag">Product Principle</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">03 — What I Know</span>
+          <h2 class="sec-title">A toolkit built for<br /><em>modern interfaces</em></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal-up" data-delay="0">
+            <div class="sk-icon"><i class="fab fa-react"></i></div>
+            <h3>React.js</h3>
+            <p>Component architecture, hooks, state management, performance optimization, and reusable design systems.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="88"><div class="sk-fill"></div></div>
+              <span>Advanced</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="80">
+            <div class="sk-icon"><i class="fab fa-html5"></i></div>
+            <h3>HTML5 / CSS3</h3>
+            <p>Semantic markup, Grid, Flexbox, custom properties, animations, and accessibility-first development.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="95"><div class="sk-fill"></div></div>
+              <span>Expert</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="160">
+            <div class="sk-icon"><i class="fab fa-js-square"></i></div>
+            <h3>JavaScript ES6+</h3>
+            <p>DOM manipulation, async/await, closures, modular patterns, event-driven design, and browser APIs.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="85"><div class="sk-fill"></div></div>
+              <span>Advanced</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="240">
+            <div class="sk-icon"><i class="fab fa-bootstrap"></i></div>
+            <h3>Bootstrap / jQuery</h3>
+            <p>Rapid UI development, responsive grids, custom theming, plugin integration, and legacy fluency.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="92"><div class="sk-fill"></div></div>
+              <span>Expert</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="0">
+            <div class="sk-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Responsive Design</h3>
+            <p>Mobile-first thinking, fluid layouts, viewport adaptations, and cross-device visual consistency.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="93"><div class="sk-fill"></div></div>
+              <span>Expert</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="80">
+            <div class="sk-icon"><i class="fas fa-magic"></i></div>
+            <h3>UI/UX Thinking</h3>
+            <p>User flows, wireframing, visual hierarchy, micro-interactions, and feedback loops — without a designer.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="80"><div class="sk-fill"></div></div>
+              <span>Proficient</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="160">
+            <div class="sk-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Git & Workflow</h3>
+            <p>Version control, branching strategies, PR reviews, and collaborative development in cross-functional teams.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="82"><div class="sk-fill"></div></div>
+              <span>Proficient</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-up" data-delay="240">
+            <div class="sk-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Design Systems</h3>
+            <p>Building consistent component libraries, token-based styling, and scalable UI patterns for large products.</p>
+            <div class="sk-bar-row">
+              <div class="sk-bar" data-w="78"><div class="sk-fill"></div></div>
+              <span>Proficient</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools-row reveal-up">
+          <p class="tools-label">Also comfortable with</p>
+          <div class="tools-chips">
+            <span><i class="fab fa-figma"></i> Figma</span>
+            <span><i class="fas fa-wind"></i> Tailwind CSS</span>
+            <span><i class="fas fa-fire"></i> SASS/SCSS</span>
+            <span><i class="fab fa-npm"></i> npm / Yarn</span>
+            <span><i class="fab fa-github"></i> GitHub</span>
+            <span>Vite</span>
+            <span>REST APIs</span>
+            <span>Postman</span>
+            <span>VS Code</span>
+            <span>Chrome DevTools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EXPERIENCE ====== -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">04 — Where I've Worked</span>
+          <h2 class="sec-title">4+ years building<br /><em>real products, real impact</em></h2>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal-left">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3 class="tl-role">Senior UI Developer</h3>
+                  <div class="tl-company">
+                    <span class="co-name">Select10X</span>
+                    <span class="co-tag">Full-time</span>
+                  </div>
+                </div>
+                <div class="tl-meta">
+                  <span><i class="fas fa-calendar-alt"></i> Jan 2022 – Present</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                </div>
+              </div>
+              <p class="tl-intro">Select10X is an AI-powered hiring and assessment platform. I joined as the <strong>sole frontend developer</strong> and grew into the primary owner of the entire UI — from architecture to delivery.</p>
+
+              <!-- Impact badges row -->
+              <div class="impact-badges">
+                <div class="imp-badge imp-perf">
+                  <i class="fas fa-bolt"></i>
+                  <span><strong>40%</strong> bundle size reduction</span>
+                </div>
+                <div class="imp-badge imp-scale">
+                  <i class="fas fa-users"></i>
+                  <span><strong>10,000+</strong> candidates served</span>
+                </div>
+                <div class="imp-badge imp-speed">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span><strong>60%</strong> faster render after React migration</span>
+                </div>
+              </div>
+
+              <ul class="tl-list">
+                <li><i class="fas fa-check-circle"></i><span>Designed and built the <strong>Candidate Assessment Player</strong> — a timed, multi-format quiz engine handling MCQs, coding questions, and video responses; zero design support, delivered in 6 weeks.</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Built the <strong>Question Bank and Manage Assessments module</strong> — full CRUD with filters, tagging, difficulty levels, and bulk operations for HR teams managing 5,000+ questions.</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Created the <strong>Self-Assessment Portal</strong> — enabling candidates to test themselves and receive instant feedback, increasing platform session depth by an estimated <strong>35%</strong>.</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Migrated key modules from <strong>jQuery/Bootstrap to React</strong> — reducing bundle size by ~40%, improving render performance, and establishing component reuse patterns.</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Collaborated directly with <strong>product and backend teams</strong> to ship features end-to-end, translating requirement docs into working UI on tight timelines.</span></li>
+              </ul>
+              <div class="tl-stack">
+                <span>React</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>jQuery</span><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal-right">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <div>
+                  <h3 class="tl-role">Freelance UI Developer</h3>
+                  <div class="tl-company">
+                    <span class="co-name">Independent Projects</span>
+                    <span class="co-tag co-tag-alt">Freelance</span>
+                  </div>
+                </div>
+                <div class="tl-meta">
+                  <span><i class="fas fa-calendar-alt"></i> 2021 – Present</span>
+                  <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                </div>
+              </div>
+              <p class="tl-intro">Alongside my full-time role, I've taken on select freelance projects — helping small businesses and startups build their digital presence with fast, clean interfaces.</p>
+              <ul class="tl-list">
+                <li><i class="fas fa-check-circle"></i><span>Built responsive <strong>landing pages and marketing sites</strong> focused on fast load times and clear visual communication; average PageSpeed score of <strong>92+</strong>.</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Delivered <strong>dashboard UI kits</strong> and admin panel templates for SaaS clients, enabling faster internal tooling.</span></li>
+                <li><i class="fas fa-check-circle"></i><span>Worked directly with clients to <strong>translate brand briefs into working interfaces</strong>, managing feedback rounds independently.</span></li>
+              </ul>
+              <div class="tl-stack">
+                <span>HTML/CSS</span><span>JavaScript</span><span>Bootstrap</span><span>React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS / CASE STUDIES ====== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">05 — Selected Work</span>
+          <h2 class="sec-title">Case studies from<br /><em>real production systems</em></h2>
+          <p class="sec-sub">Not portfolios pieces — real modules shipped to real users. Each one documents the problem, the decisions, and the measurable outcome.</p>
+        </div>
+
+        <!-- Case Study 1: Candidate Assessment Player -->
+        <article class="cs-card reveal-up" data-cs="0">
+          <div class="cs-card-inner">
+            <div class="cs-left">
+              <div class="cs-eyebrow"><i class="fas fa-star"></i> Featured Case Study</div>
+              <h3 class="cs-title">Candidate Assessment Player</h3>
+              <p class="cs-summary">A timed, multi-format online exam engine — the core product of Select10X, built from scratch with zero design support.</p>
+
+              <div class="cs-meta-row">
+                <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2022</span>
+                <span class="cs-meta-item"><i class="fas fa-building"></i> Select10X</span>
+                <span class="cs-meta-item cs-role-badge">Sole Frontend Dev</span>
+              </div>
+
+              <div class="cs-detail-blocks">
+                <div class="cs-block cs-prob">
+                  <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                  <p>HR teams needed a reliable way to conduct online technical assessments. Candidates were dropping off due to unreliable third-party tools with poor mobile support and zero customization.</p>
+                </div>
+                <div class="cs-block cs-constraint">
+                  <h4><i class="fas fa-exclamation-triangle"></i> Constraints</h4>
+                  <p>No design team. No design specs. 6-week deadline. Single frontend developer. Had to support MCQs, coding, and subjective formats simultaneously.</p>
+                </div>
+                <div class="cs-block cs-approach">
+                  <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+                  <p>Started with user flows on paper, then built a component-driven React architecture so each question type was independently testable. Prioritized auto-save and graceful error handling first — the "trust layer" that makes candidates feel safe.</p>
+                </div>
+              </div>
+
+              <div class="cs-built">
+                <h4><i class="fas fa-code"></i> What I Built</h4>
+                <ul class="cs-built-list">
+                  <li>Multi-section exam flow with per-section and global timer enforcement</li>
+                  <li>Auto-save on every answer change with localStorage fallback</li>
+                  <li>Anti-cheat detection — tab-switch alerts, fullscreen enforcement</li>
+                  <li>3 question type renderers: MCQ, subjective, and code input</li>
+                  <li>Post-submission score summary and per-question review screen</li>
+                  <li>Fully responsive layout tested across desktop, tablet, and mobile</li>
+                </ul>
+              </div>
+
+              <div class="cs-impact">
+                <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+                <div class="cs-impact-row">
+                  <div class="cs-metric">
+                    <span class="cm-num">10k+</span>
+                    <span class="cm-label">Assessments completed</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cm-num">~35%</span>
+                    <span class="cm-label">Drop-off reduction</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cm-num">6 wks</span>
+                    <span class="cm-label">Delivered in</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>React.js</span><span>CSS3</span><span>REST APIs</span><span>JavaScript</span><span>LocalStorage API</span>
+              </div>
+
+              <button class="btn btn-outline btn-sm cs-expand-btn" data-target="cs-modal-0">
+                <i class="fas fa-expand-alt"></i> Full Case Study
+              </button>
+            </div>
+
+            <div class="cs-right">
+              <div class="cs-mockup">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body">
+                  <div class="mock-topbar">
+                    <span class="mock-brand">Select10X</span>
+                    <span class="mock-timer">⏱ 45:32</span>
+                  </div>
+                  <div class="mock-q-area">
+                    <div class="mock-qnum">Question 7 of 20</div>
+                    <div class="mock-qtext">Which lifecycle method is called after the component is mounted?</div>
+                    <div class="mock-opts">
+                      <div class="mock-opt selected">componentDidMount()</div>
+                      <div class="mock-opt">componentWillMount()</div>
+                      <div class="mock-opt">useEffect()</div>
+                      <div class="mock-opt">render()</div>
+                    </div>
+                  </div>
+                  <div class="mock-nav">
+                    <span class="mock-prev">← Prev</span>
+                    <div class="mock-dots">
+                      <span class="d d-done"></span><span class="d d-done"></span><span class="d d-done"></span>
+                      <span class="d d-done"></span><span class="d d-done"></span><span class="d d-done"></span>
+                      <span class="d d-active"></span><span class="d"></span><span class="d"></span>
+                    </div>
+                    <span class="mock-next">Next →</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual stats inside the right panel -->
+              <div class="cs-side-stats">
+                <div class="css-stat">
+                  <div class="css-bar-wrap">
+                    <div class="css-bar-label">Performance Score</div>
+                    <div class="css-bar-track"><div class="css-bar-fill" style="width:91%"></div></div>
+                    <div class="css-bar-val">91/100</div>
+                  </div>
+                </div>
+                <div class="css-stat">
+                  <div class="css-bar-wrap">
+                    <div class="css-bar-label">Accessibility</div>
+                    <div class="css-bar-track"><div class="css-bar-fill css-fill-cyan" style="width:88%"></div></div>
+                    <div class="css-bar-val">88/100</div>
+                  </div>
+                </div>
+                <div class="css-stat">
+                  <div class="css-bar-wrap">
+                    <div class="css-bar-label">Best Practices</div>
+                    <div class="css-bar-track"><div class="css-bar-fill css-fill-pink" style="width:95%"></div></div>
+                    <div class="css-bar-val">95/100</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 2: Question Bank Module -->
+        <article class="cs-card cs-card-alt reveal-up" data-cs="1">
+          <div class="cs-card-inner">
+            <div class="cs-left">
+              <div class="cs-eyebrow"><i class="fas fa-database"></i> Admin Tooling</div>
+              <h3 class="cs-title">Question Bank & Assessment Manager</h3>
+              <p class="cs-summary">A full-featured content management system enabling HR teams to build, tag, and manage thousands of assessment questions at scale.</p>
+
+              <div class="cs-meta-row">
+                <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2022–2023</span>
+                <span class="cs-meta-item"><i class="fas fa-building"></i> Select10X</span>
+                <span class="cs-meta-item cs-role-badge">Frontend Lead</span>
+              </div>
+
+              <div class="cs-detail-blocks">
+                <div class="cs-block cs-prob">
+                  <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                  <p>HR teams were managing test questions in spreadsheets. Creating a new assessment meant manually tracking what questions existed, at what difficulty, for which skill — an error-prone, time-consuming process.</p>
+                </div>
+                <div class="cs-block cs-constraint">
+                  <h4><i class="fas fa-exclamation-triangle"></i> Constraints</h4>
+                  <p>5,000+ questions needed to be manageable in one UI. Bulk imports via CSV. Complex filtering (skill, difficulty, type, usage count). Real-time search across large datasets.</p>
+                </div>
+                <div class="cs-block cs-approach">
+                  <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+                  <p>Designed a faceted filter system with URL-persisted state so HR managers could bookmark specific query configurations. Built a virtual scroll list for performance, paired with optimistic UI updates so bulk edits felt instant.</p>
+                </div>
+              </div>
+
+              <div class="cs-impact">
+                <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+                <div class="cs-impact-row">
+                  <div class="cs-metric">
+                    <span class="cm-num">5k+</span>
+                    <span class="cm-label">Questions managed</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cm-num">~70%</span>
+                    <span class="cm-label">Faster assessment creation</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cm-num">&lt;200ms</span>
+                    <span class="cm-label">Filter response time</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>React</span><span>Bootstrap</span><span>REST API</span><span>Pagination</span><span>CSV Import</span>
+              </div>
+
+              <button class="btn btn-outline btn-sm cs-expand-btn" data-target="cs-modal-1">
+                <i class="fas fa-expand-alt"></i> Full Case Study
+              </button>
+            </div>
+
+            <div class="cs-right">
+              <!-- Admin mockup -->
+              <div class="cs-mockup">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body">
+                  <div class="mock-topbar">
+                    <span class="mock-brand">Question Bank</span>
+                    <span class="mock-timer" style="background:rgba(108,99,255,0.12);border-color:rgba(108,99,255,0.3);color:var(--purple)">5,241 questions</span>
+                  </div>
+                  <div class="mock-filters">
+                    <div class="mock-filter-chip active">All Skills</div>
+                    <div class="mock-filter-chip">React</div>
+                    <div class="mock-filter-chip">CSS</div>
+                    <div class="mock-filter-chip">JavaScript</div>
+                  </div>
+                  <div class="mock-table">
+                    <div class="mock-trow mock-thead">
+                      <span>Question</span><span>Difficulty</span><span>Type</span>
+                    </div>
+                    <div class="mock-trow">
+                      <span>What is the virtual DOM?</span>
+                      <span class="diff-easy">Easy</span>
+                      <span>MCQ</span>
+                    </div>
+                    <div class="mock-trow mock-trow-selected">
+                      <span>Explain useEffect cleanup</span>
+                      <span class="diff-med">Medium</span>
+                      <span>Subjective</span>
+                    </div>
+                    <div class="mock-trow">
+                      <span>Implement debounce in JS</span>
+                      <span class="diff-hard">Hard</span>
+                      <span>Coding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: HR Analytics Dashboard -->
+        <article class="cs-card reveal-up" data-cs="2">
+          <div class="cs-card-inner">
+            <div class="cs-left">
+              <div class="cs-eyebrow"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+              <h3 class="cs-title">HR Analytics Dashboard</h3>
+              <p class="cs-summary">A real-time data dashboard giving recruiters visibility into assessment completion, candidate performance, and hiring pipeline health.</p>
+
+              <div class="cs-meta-row">
+                <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2023</span>
+                <span class="cs-meta-item"><i class="fas fa-building"></i> Select10X</span>
+                <span class="cs-meta-item cs-role-badge">Frontend Lead</span>
+              </div>
+
+              <div class="cs-detail-blocks">
+                <div class="cs-block cs-prob">
+                  <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                  <p>Recruiters had no visibility into how candidates were performing. They were making hiring decisions based on gut feel, not data — with completion rates, score distributions, and time-on-question sitting in a raw database.</p>
+                </div>
+                <div class="cs-block cs-approach">
+                  <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+                  <p>Translated raw API data into meaningful visual summaries. Used Chart.js for interactive charts. Built a filter-first dashboard with exportable CSV reports — designed so a non-technical recruiter could extract insights in under 30 seconds.</p>
+                </div>
+              </div>
+
+              <div class="cs-impact">
+                <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+                <div class="cs-impact-row">
+                  <div class="cs-metric">
+                    <span class="cm-num">8+</span>
+                    <span class="cm-label">Chart types built</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cm-num">~45%</span>
+                    <span class="cm-label">Faster hiring decisions</span>
+                  </div>
+                  <div class="cs-metric">
+                    <span class="cm-num">CSV</span>
+                    <span class="cm-label">One-click export</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-stack-row">
+                <span>React</span><span>Chart.js</span><span>CSS3</span><span>REST API</span><span>CSV Export</span>
+              </div>
+
+              <button class="btn btn-outline btn-sm cs-expand-btn" data-target="cs-modal-2">
+                <i class="fas fa-expand-alt"></i> Full Case Study
+              </button>
+            </div>
+
+            <div class="cs-right">
+              <!-- Dashboard mockup -->
+              <div class="cs-mockup">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <div class="mock-body">
+                  <div class="mock-topbar">
+                    <span class="mock-brand">Analytics</span>
+                    <span class="mock-timer" style="background:rgba(0,212,255,0.08);border-color:rgba(0,212,255,0.22);color:var(--cyan)">This Month</span>
+                  </div>
+                  <div class="mock-stats-row">
+                    <div class="mock-stat-mini">
+                      <div class="msm-val" style="color:var(--purple)">847</div>
+                      <div class="msm-lbl">Assessments</div>
+                    </div>
+                    <div class="mock-stat-mini">
+                      <div class="msm-val" style="color:var(--cyan)">68%</div>
+                      <div class="msm-lbl">Pass Rate</div>
+                    </div>
+                    <div class="mock-stat-mini">
+                      <div class="msm-val" style="color:var(--pink)">24m</div>
+                      <div class="msm-lbl">Avg Time</div>
+                    </div>
+                  </div>
+                  <!-- Mini bar chart visual -->
+                  <div class="mock-chart-area">
+                    <div class="mock-chart-bars">
+                      <div class="mcb" style="height:40%"></div>
+                      <div class="mcb" style="height:65%"></div>
+                      <div class="mcb" style="height:55%"></div>
+                      <div class="mcb" style="height:80%"></div>
+                      <div class="mcb" style="height:70%"></div>
+                      <div class="mcb" style="height:90%"></div>
+                      <div class="mcb" style="height:75%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====== INTERACTIVE UI DEMO ====== -->
+    <section id="demo" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">06 — Live UI Components</span>
+          <h2 class="sec-title">Frontend craft,<br /><em>in action</em></h2>
+          <p class="sec-sub">These are live, interactive components — no screenshots, no video. Click, drag, sort. See how I build.</p>
+        </div>
+
+        <div class="demo-grid">
+
+          <!-- Demo 1: Mini Dashboard Widget -->
+          <div class="demo-card reveal-up" data-delay="0">
+            <div class="demo-label"><i class="fas fa-chart-pie"></i> Dashboard Widget</div>
+            <div class="demo-area" id="demo-dashboard">
+              <div class="dw-header">
+                <span class="dw-title">Hiring Pipeline</span>
+                <div class="dw-tabs">
+                  <button class="dw-tab active" data-period="week">Week</button>
+                  <button class="dw-tab" data-period="month">Month</button>
+                </div>
+              </div>
+              <div class="dw-metrics">
+                <div class="dw-metric">
+                  <div class="dw-m-val" id="dw-applied">247</div>
+                  <div class="dw-m-lbl">Applied</div>
+                  <div class="dw-m-trend up"><i class="fas fa-arrow-up"></i> 12%</div>
+                </div>
+                <div class="dw-metric">
+                  <div class="dw-m-val" id="dw-assessed">164</div>
+                  <div class="dw-m-lbl">Assessed</div>
+                  <div class="dw-m-trend up"><i class="fas fa-arrow-up"></i> 8%</div>
+                </div>
+                <div class="dw-metric">
+                  <div class="dw-m-val" id="dw-shortlisted">43</div>
+                  <div class="dw-m-lbl">Shortlisted</div>
+                  <div class="dw-m-trend down"><i class="fas fa-arrow-down"></i> 3%</div>
+                </div>
+              </div>
+              <div class="dw-bars">
+                <div class="dw-bar-row"><span>Applied</span><div class="dw-bar-track"><div class="dw-bar-fill" style="width:100%" data-w="100"></div></div><span>247</span></div>
+                <div class="dw-bar-row"><span>Assessed</span><div class="dw-bar-track"><div class="dw-bar-fill dw-fill-cyan" style="width:66%" data-w="66"></div></div><span>164</span></div>
+                <div class="dw-bar-row"><span>Shortlisted</span><div class="dw-bar-track"><div class="dw-bar-fill dw-fill-pink" style="width:17%" data-w="17"></div></div><span>43</span></div>
+              </div>
+            </div>
+            <div class="demo-caption">Click Week / Month to see animated transitions</div>
+          </div>
+
+          <!-- Demo 2: Interactive Skill Slider -->
+          <div class="demo-card reveal-up" data-delay="100">
+            <div class="demo-label"><i class="fas fa-sliders-h"></i> Interactive Slider</div>
+            <div class="demo-area" id="demo-slider">
+              <div class="sl-title">Rate your React knowledge</div>
+              <div class="sl-track-wrap">
+                <input type="range" min="0" max="100" value="72" class="sl-range" id="skill-slider" />
+                <div class="sl-track-bg"></div>
+              </div>
+              <div class="sl-output">
+                <span class="sl-val" id="sl-value">72</span>
+                <span class="sl-label" id="sl-label">Advanced</span>
+              </div>
+              <div class="sl-desc" id="sl-desc">You're comfortable with hooks, component patterns, and state management. One step from expert.</div>
+              <div class="sl-compare">
+                <div class="sl-comp-bar">
+                  <div class="sl-comp-fill" id="sl-comp-fill" style="width:72%"></div>
+                  <div class="sl-comp-marker" id="sl-comp-marker" style="left:72%"></div>
+                </div>
+                <div class="sl-comp-labels">
+                  <span>Beginner</span><span>Proficient</span><span>Advanced</span><span>Expert</span>
+                </div>
+              </div>
+            </div>
+            <div class="demo-caption">Drag the slider to explore skill levels</div>
+          </div>
+
+          <!-- Demo 3: Sortable Table -->
+          <div class="demo-card reveal-up" data-delay="200">
+            <div class="demo-label"><i class="fas fa-table"></i> Sortable Data Table</div>
+            <div class="demo-area" id="demo-table">
+              <div class="dt-search-row">
+                <input type="text" class="dt-search" id="dt-search" placeholder="Search candidates..." />
+                <span class="dt-count" id="dt-count">5 of 5</span>
+              </div>
+              <table class="dt-table">
+                <thead>
+                  <tr>
+                    <th class="dt-th sortable" data-col="name">Name <i class="fas fa-sort"></i></th>
+                    <th class="dt-th sortable" data-col="score">Score <i class="fas fa-sort"></i></th>
+                    <th class="dt-th sortable" data-col="time">Time <i class="fas fa-sort"></i></th>
+                    <th class="dt-th">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="dt-body">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+            <div class="demo-caption">Click column headers to sort · Search to filter</div>
+          </div>
+
+          <!-- Demo 4: Micro-interactions -->
+          <div class="demo-card reveal-up" data-delay="300">
+            <div class="demo-label"><i class="fas fa-magic"></i> Micro-interactions</div>
+            <div class="demo-area" id="demo-micro">
+              <!-- Like button -->
+              <div class="micro-row">
+                <span class="micro-label">Reaction button</span>
+                <button class="micro-like" id="micro-like">
+                  <i class="fas fa-heart"></i>
+                  <span class="like-count" id="like-count">24</span>
+                </button>
+              </div>
+              <!-- Copy button -->
+              <div class="micro-row">
+                <span class="micro-label">Copy to clipboard</span>
+                <div class="micro-copy-wrap">
+                  <code class="micro-code">npm install vivek-ui</code>
+                  <button class="micro-copy" id="micro-copy" aria-label="Copy">
+                    <i class="fas fa-copy" id="micro-copy-icon"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Progress button -->
+              <div class="micro-row">
+                <span class="micro-label">Progress button</span>
+                <button class="micro-progress-btn" id="micro-progress">
+                  <span class="mpb-text">Deploy UI</span>
+                  <span class="mpb-bar"></span>
+                </button>
+              </div>
+              <!-- Toggle switch -->
+              <div class="micro-row">
+                <span class="micro-label">Dark mode toggle</span>
+                <label class="micro-toggle">
+                  <input type="checkbox" id="micro-toggle-input" checked />
+                  <span class="toggle-track">
+                    <span class="toggle-thumb">
+                      <i class="fas fa-moon toggle-icon-off"></i>
+                      <i class="fas fa-sun toggle-icon-on"></i>
+                    </span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="demo-caption">Click each element to see the interaction</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CURRENTLY BUILDING ====== -->
+    <section id="building" class="section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">07 — Currently Building</span>
+          <h2 class="sec-title">An AI product I'm<br /><em>shipping in public</em></h2>
+        </div>
+
+        <div class="building-card reveal-up">
+          <div class="building-left">
+            <div class="building-status">
+              <span class="status-dot"></span>
+              <span>In Active Development — MVP phase</span>
+            </div>
+            <h3 class="building-title">RecastAI</h3>
+            <p class="building-tagline">AI-powered content repurposing engine for creators and marketers</p>
+            <p class="building-desc">
+              Most creators write one great piece of content and let it die. RecastAI solves this by taking a single piece — a blog post, a podcast transcript, a YouTube video — and repurposing it into 10+ platform-native formats: Twitter threads, LinkedIn posts, email newsletters, Instagram carousels, and short-form scripts.
+            </p>
+            <p class="building-desc">
+              I'm building this to scratch my own itch and to push myself beyond UI work into full product ownership — design, frontend, API integration, and user research.
+            </p>
+
+            <div class="building-details">
+              <div class="bd-item">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                  <strong>Problem</strong>
+                  <span>Content repurposing is a 2-hour manual task that blocks creators from publishing consistently across platforms.</span>
+                </div>
+              </div>
+              <div class="bd-item">
+                <i class="fas fa-wrench"></i>
+                <div>
+                  <strong>What's built</strong>
+                  <span>Landing page, auth flow, content ingestion UI, and first-pass AI output rendering. Integration with OpenAI API in progress.</span>
+                </div>
+              </div>
+              <div class="bd-item">
+                <i class="fas fa-road"></i>
+                <div>
+                  <strong>Next milestone</strong>
+                  <span>Closed beta with 20 creator testers. Targeting June 2025 for public waitlist.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="building-stack">
+              <span>React</span><span>Tailwind CSS</span><span>OpenAI API</span><span>Node.js</span><span>Supabase</span>
+            </div>
+
+            <div class="building-actions">
+              <a href="#contact" class="btn btn-primary btn-sm"><i class="fas fa-bell"></i> Get Notified</a>
+              <span class="building-note">More coming soon — following me on LinkedIn for updates.</span>
+            </div>
+          </div>
+
+          <div class="building-right">
+            <div class="building-mockup">
+              <div class="bm-header">
+                <div class="bm-logo"><i class="fas fa-bolt"></i> RecastAI</div>
+                <span class="bm-badge">Beta</span>
+              </div>
+              <div class="bm-input-area">
+                <div class="bm-label">Paste your content</div>
+                <div class="bm-textarea">
+                  <span class="bm-placeholder">React 19 is now stable and it introduces...</span>
+                  <span class="bm-cursor">|</span>
+                </div>
+              </div>
+              <div class="bm-formats">
+                <div class="bm-format-label">Output formats</div>
+                <div class="bm-format-chips">
+                  <span class="bm-chip active"><i class="fab fa-twitter"></i> Thread</span>
+                  <span class="bm-chip active"><i class="fab fa-linkedin"></i> Post</span>
+                  <span class="bm-chip active"><i class="fas fa-envelope"></i> Email</span>
+                  <span class="bm-chip"><i class="fas fa-image"></i> Carousel</span>
+                  <span class="bm-chip"><i class="fas fa-video"></i> Script</span>
+                </div>
+              </div>
+              <button class="bm-generate">
+                <i class="fas fa-bolt"></i> Generate Content
+                <span class="bm-gen-shimmer"></span>
+              </button>
+              <div class="bm-output">
+                <div class="bm-out-label"><i class="fab fa-twitter"></i> Twitter Thread</div>
+                <div class="bm-out-lines">
+                  <div class="bm-line" style="width:90%"></div>
+                  <div class="bm-line" style="width:75%"></div>
+                  <div class="bm-line" style="width:85%"></div>
+                  <div class="bm-line bm-line-short" style="width:40%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EDUCATION ====== -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">08 — Background</span>
+          <h2 class="sec-title">Foundation &amp; <em>continuous learning</em></h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal-left">
+            <div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h3>Bachelor of Computer Applications</h3>
+              <p class="edu-inst">BCA — Bihar, India</p>
+              <p class="edu-desc">A 3-year programme covering core computer science fundamentals — algorithms, databases, web technologies, and software engineering.</p>
+            </div>
+          </div>
+          <div class="edu-card reveal-right">
+            <div class="edu-ico"><i class="fas fa-laptop-code"></i></div>
+            <div>
+              <h3>Self-Directed Learning</h3>
+              <p class="edu-inst">Online Courses, Projects &amp; Production Experience</p>
+              <p class="edu-desc">React, advanced CSS, design patterns, and UI engineering — learnt by building real things and shipping them to production, not just watching tutorials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== WHY HIRE ME ====== -->
+    <section id="value" class="section">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">09 — Why Hire Me</span>
+          <h2 class="sec-title">What makes me<br /><em>different</em></h2>
+        </div>
+        <div class="value-grid">
+          <div class="val-card reveal-up" data-delay="0">
+            <div class="val-num">01</div>
+            <i class="fas fa-pencil-ruler val-ico"></i>
+            <h3>I Design, Then I Code</h3>
+            <p>Most developers need a designer. I've been both for 4 years. I think about hierarchy, spacing, colour, and motion — not just markup.</p>
+          </div>
+          <div class="val-card reveal-up" data-delay="100">
+            <div class="val-num">02</div>
+            <i class="fas fa-ship val-ico"></i>
+            <h3>I Ship, Not Just Build</h3>
+            <p>Production experience means I understand edge cases, error states, loading states, and empty states. I deliver features that work for real users.</p>
+          </div>
+          <div class="val-card reveal-up" data-delay="200">
+            <div class="val-num">03</div>
+            <i class="fas fa-comments val-ico"></i>
+            <h3>I Talk to Stakeholders</h3>
+            <p>Working with PMs, backend engineers, and business owners has made me a strong communicator. I ask the right questions so I don't have to rebuild later.</p>
+          </div>
+          <div class="val-card reveal-up" data-delay="300">
+            <div class="val-num">04</div>
+            <i class="fas fa-expand-arrows-alt val-ico"></i>
+            <h3>I Scale With the Product</h3>
+            <p>I've maintained and grown a codebase over years — introducing React, improving patterns, and making it easier for future developers to work in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="sec-label">10 — Get In Touch</span>
+          <h2 class="sec-title">Let's build something<br /><em>great together</em></h2>
+          <p class="sec-sub">I'm open to full-time roles, contract work, and interesting collaborations. Drop me a message.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="ci-item">
+              <div class="ci-ico"><i class="fas fa-envelope"></i></div>
+              <div><h4>Email</h4><a href="mailto:hello@vvek.dev">hello@vvek.dev</a></div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-ico"><i class="fas fa-globe"></i></div>
+              <div><h4>Portfolio</h4><a href="https://vvek.dev" target="_blank" rel="noopener">vvek.dev</a></div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-ico"><i class="fas fa-map-marker-alt"></i></div>
+              <div><h4>Location</h4><span>Bihar, India — Open to Remote</span></div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-ico"><i class="fas fa-clock"></i></div>
+              <div><h4>Response Time</h4><span>Within 24 hours</span></div>
+            </div>
+            <div class="ci-socials">
+              <a href="https://github.com/"      target="_blank" rel="noopener" class="soc-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="soc-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/"     target="_blank" rel="noopener" class="soc-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal-right" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="I'd love to work with you!" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-btn">
+              <span class="s-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="s-load" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+              <span class="s-done" style="display:none"><i class="fas fa-check"></i> Message Sent!</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-logo"><span class="logo-bracket">&lt;</span>VK<span class="logo-bracket">/&gt;</span></div>
+        <p class="footer-copy">Designed &amp; built by <strong>Vivek K</strong> — <span id="footer-year">2025</span></p>
+        <nav class="footer-nav">
+          <a href="#hero">Top</a>
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <a href="#building">Building</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY MODALS -->
+  <div class="cs-modal-overlay" id="cs-modal-overlay">
+    <div class="cs-modal" id="cs-modal-0" role="dialog" aria-modal="true" aria-label="Assessment Player Case Study">
+      <button class="cs-modal-close" data-close><i class="fas fa-times"></i></button>
+      <div class="cs-modal-inner">
+        <span class="cs-modal-label">Full Case Study</span>
+        <h2>Candidate Assessment Player</h2>
+        <p class="cs-modal-sub">The core product of Select10X — built from zero in 6 weeks as the sole frontend developer.</p>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-bullseye"></i> Problem Statement</h4>
+          <p>HR teams at Select10X needed a reliable, distraction-free environment to conduct structured online assessments for candidates. Existing third-party tools had poor mobile support, no customization, and high failure rates — causing candidate drop-off and unreliable data.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-exclamation-triangle"></i> Constraints</h4>
+          <ul>
+            <li>No design team, no design specs — had to design in the browser</li>
+            <li>6-week deadline from zero to production</li>
+            <li>Single frontend developer</li>
+            <li>Had to support MCQs, subjective answers, and coding challenges simultaneously</li>
+            <li>Needed to be reliable on 3G connections in rural areas of India</li>
+          </ul>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+          <p>I started with user flows on paper to map every state the exam could enter — not started, in progress, paused, auto-submitted, manually submitted, error. Then built a React component architecture where each question type (MCQ, subjective, coding) was an independent renderer, making it testable in isolation and extensible for new types later.</p>
+          <p>The most critical decision was the "trust layer": auto-saving every answer to both the API and localStorage on every change. This meant a network failure wouldn't lose candidate progress. The system would recover and sync on reconnection.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-code"></i> Key Decisions</h4>
+          <ul>
+            <li><strong>Per-section timers:</strong> Each section had its own countdown, preventing candidates from spending all time on easy questions.</li>
+            <li><strong>Optimistic UI for answers:</strong> Answers were stored locally first, then synced — so the UI was always responsive regardless of API latency.</li>
+            <li><strong>Anti-cheat detection:</strong> Tab-switch events triggered a warning banner (3 warnings = auto-submit). Fullscreen was enforced on entry. These were frontend-only guardrails, communicated clearly to candidates upfront.</li>
+            <li><strong>Progressive enhancement:</strong> Core functionality worked without JavaScript for accessibility, enhanced by JS where supported.</li>
+          </ul>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+          <div class="cs-impact-row">
+            <div class="cs-metric"><span class="cm-num">10k+</span><span class="cm-label">Assessments completed</span></div>
+            <div class="cs-metric"><span class="cm-num">~35%</span><span class="cm-label">Drop-off reduction vs. old tool</span></div>
+            <div class="cs-metric"><span class="cm-num">6 wks</span><span class="cm-label">Zero to production</span></div>
+            <div class="cs-metric"><span class="cm-num">3</span><span class="cm-label">Question types supported</span></div>
+          </div>
+        </div>
+        <div class="cs-modal-stack">
+          <span>React.js</span><span>CSS3</span><span>REST APIs</span><span>JavaScript</span><span>LocalStorage API</span><span>Fullscreen API</span><span>Page Visibility API</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-modal" id="cs-modal-1" role="dialog" aria-modal="true" aria-label="Question Bank Case Study">
+      <button class="cs-modal-close" data-close><i class="fas fa-times"></i></button>
+      <div class="cs-modal-inner">
+        <span class="cs-modal-label">Full Case Study</span>
+        <h2>Question Bank & Assessment Manager</h2>
+        <p class="cs-modal-sub">A scalable admin CMS for managing 5,000+ test questions with real-time filtering and bulk operations.</p>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-bullseye"></i> Problem Statement</h4>
+          <p>HR teams were using spreadsheets to track assessment questions — filtering by skill, difficulty, and type manually before copying questions into assessments one-by-one. This was taking 1–2 hours per assessment setup and introducing errors.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+          <p>Designed a faceted filter system with URL-persisted filter state so users could bookmark specific query configs. Used a server-side paginated API with debounced search to handle 5,000+ records without performance issues. Built optimistic UI for edits so the list updated immediately without waiting for API confirmation.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+          <div class="cs-impact-row">
+            <div class="cs-metric"><span class="cm-num">5k+</span><span class="cm-label">Questions managed</span></div>
+            <div class="cs-metric"><span class="cm-num">~70%</span><span class="cm-label">Faster assessment creation</span></div>
+            <div class="cs-metric"><span class="cm-num">&lt;200ms</span><span class="cm-label">Filter response time</span></div>
+          </div>
+        </div>
+        <div class="cs-modal-stack">
+          <span>React</span><span>Bootstrap</span><span>REST API</span><span>URL State</span><span>CSV Import/Export</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cs-modal" id="cs-modal-2" role="dialog" aria-modal="true" aria-label="Analytics Dashboard Case Study">
+      <button class="cs-modal-close" data-close><i class="fas fa-times"></i></button>
+      <div class="cs-modal-inner">
+        <span class="cs-modal-label">Full Case Study</span>
+        <h2>HR Analytics Dashboard</h2>
+        <p class="cs-modal-sub">Turning raw assessment data into actionable hiring intelligence for recruiters.</p>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-bullseye"></i> Problem Statement</h4>
+          <p>Recruiters had no visibility into aggregate data — they knew individual candidate scores but couldn't see patterns: which questions had 90% failure rates, which assessments took longest, what the pass/fail distribution looked like across roles.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+          <p>Mapped recruiter decision-making workflows before touching code. Identified the three questions they asked most often: "Who passed?", "How hard was it?", "How did this week compare to last?". Built the dashboard around those questions — not around the data available. Added CSV export to bridge the gap with existing Excel-based reporting workflows.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+          <div class="cs-impact-row">
+            <div class="cs-metric"><span class="cm-num">8+</span><span class="cm-label">Chart types built</span></div>
+            <div class="cs-metric"><span class="cm-num">~45%</span><span class="cm-label">Faster hiring decisions</span></div>
+            <div class="cs-metric"><span class="cm-num">CSV</span><span class="cm-label">One-click export</span></div>
+          </div>
+        </div>
+        <div class="cs-modal-stack">
+          <span>React</span><span>Chart.js</span><span>CSS3</span><span>REST API</span><span>CSV Export</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.cs-modal-overlay -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
