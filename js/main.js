@@ -185,37 +185,6 @@
   draw();
 })();
 
-/* ── TYPING EFFECT ── */
-(function () {
-  const el = document.getElementById('typed-text');
-  if (!el) return;
-
-  const phrases = [
-    'pixel-perfect UIs',
-    'React applications',
-    'responsive web apps',
-    'design systems',
-    'beautiful experiences',
-  ];
-
-  let pi = 0, ci = 0, deleting = false;
-  el.textContent = phrases[0];
-  ci = phrases[0].length;
-
-  function tick() {
-    const cur = phrases[pi];
-    if (deleting) { ci--; el.textContent = cur.substring(0, ci); }
-    else          { ci++; el.textContent = cur.substring(0, ci); }
-
-    let delay = deleting ? 42 : 82;
-    if (!deleting && ci === cur.length)  { delay = 2300; deleting = true; }
-    else if (deleting && ci === 0)       { deleting = false; pi = (pi + 1) % phrases.length; delay = 380; }
-
-    setTimeout(tick, delay);
-  }
-
-  setTimeout(tick, 2600);
-})();
 
 /* ── SCROLL REVEAL ── */
 (function () {
