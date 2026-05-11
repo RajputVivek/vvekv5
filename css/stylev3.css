@@ -1946,7 +1946,7 @@ ul { list-style: none; }
 .cap-front p,
 .cap-back small {
   color: rgba(255,255,255,0.72);
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .hover-indicator {
