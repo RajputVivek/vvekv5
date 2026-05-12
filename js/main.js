@@ -349,24 +349,64 @@
       form.animate(kf, { duration: 300, easing: 'ease-in-out' });
       return;
     }
-
+    // UI: show loading
     sText.style.display = 'none';
     sLoad.style.display = 'inline-flex';
     btn.disabled = true;
 
-    await new Promise(r => setTimeout(r, 1800));
+    // EmailJS configuration - replace with your IDs
+    const EMAILJS_USER_ID = 'YOUR_EMAILJS_USER_ID';
+    const EMAILJS_SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID';
+    const EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
 
-    sLoad.style.display = 'none';
-    sDone.style.display = 'inline-flex';
-    btn.style.background = 'linear-gradient(135deg,#28c840,#00d4ff)';
+    // Dynamically load EmailJS SDK if needed
+    function loadEmailJSSDK() {
+      if (window.emailjs && window.emailjs.sendForm) return Promise.resolve();
+      return new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+        s.async = true;
+        s.onload = () => resolve();
+        s.onerror = () => reject(new Error('Failed to load EmailJS SDK'));
+        document.head.appendChild(s);
+      });
+    }
 
-    setTimeout(() => {
-      form.reset();
-      sDone.style.display = 'none';
+    try {
+      await loadEmailJSSDK();
+      if (!window.emailjs) throw new Error('EmailJS not available');
+      // Initialize with user id if provided
+      if (EMAILJS_USER_ID && !EMAILJS_USER_ID.includes('YOUR_')) {
+        try { window.emailjs.init(EMAILJS_USER_ID); } catch (e) { /* ignore */ }
+      }
+
+      // If user didn't configure IDs, fallback to UX-only simulation
+      if (EMAILJS_SERVICE_ID.includes('YOUR_') || EMAILJS_TEMPLATE_ID.includes('YOUR_')) {
+        await new Promise(r => setTimeout(r, 1200));
+      } else {
+        const res = await window.emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, '#contact-form');
+        // emailjs returns a promise; no additional handling required
+      }
+
+      sLoad.style.display = 'none';
+      sDone.style.display = 'inline-flex';
+      btn.style.background = 'linear-gradient(135deg,#28c840,#00d4ff)';
+
+      setTimeout(() => {
+        form.reset();
+        sDone.style.display = 'none';
+        sText.style.display = 'inline-flex';
+        btn.disabled = false;
+        btn.style.background = '';
+      }, 2200);
+
+    } catch (err) {
+      console.error('Contact (EmailJS) error:', err);
+      sLoad.style.display = 'none';
       sText.style.display = 'inline-flex';
       btn.disabled = false;
-      btn.style.background = '';
-    }, 3200);
+      alert('Sorry — message failed to send. Please email hello@vvek.dev instead.');
+    }
   });
 
   form.querySelectorAll('input, textarea').forEach(f => {
