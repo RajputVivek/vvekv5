@@ -324,8 +324,10 @@
 
 /* ── CONTACT FORM ── */
 (function () {
+  try {
   const form = document.getElementById('contact-form');
   if (!form) return;
+  console.log('[contact] initializing handler');
 
   const btn   = document.getElementById('form-btn');
   const sText = btn.querySelector('.s-text');
@@ -333,6 +335,7 @@
   const sDone = btn.querySelector('.s-done');
 
   form.addEventListener('submit', async e => {
+    console.log('[contact] submit event');
     e.preventDefault();
 
     let ok = true;
@@ -356,8 +359,8 @@
 
     // EmailJS configuration - replace with your IDs
     const EMAILJS_USER_ID = 'ibdPGGKPPyd5cSbLS';
-    const EMAILJS_SERVICE_ID = 'service_5ige7zo';
-    const EMAILJS_TEMPLATE_ID = 'template_8zxnc7l';
+    const EMAILJS_SERVICE_ID = 'service_dy8gelq';
+    const EMAILJS_TEMPLATE_ID = 'template_j4ruanv';
 
     // Dynamically load EmailJS SDK if needed
     function loadEmailJSSDK() {
@@ -412,6 +415,8 @@
   form.querySelectorAll('input, textarea').forEach(f => {
     f.addEventListener('input', () => { if (f.value.trim()) f.style.borderColor = ''; });
   });
+
+  } catch (initErr) { console.error('[contact] init error', initErr); }
 })();
 
 /* ── SMOOTH SCROLL ── */
