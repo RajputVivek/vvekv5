@@ -355,9 +355,9 @@
     btn.disabled = true;
 
     // EmailJS configuration - replace with your IDs
-    const EMAILJS_USER_ID = 'YOUR_EMAILJS_USER_ID';
-    const EMAILJS_SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID';
-    const EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
+    const EMAILJS_USER_ID = 'ibdPGGKPPyd5cSbLS';
+    const EMAILJS_SERVICE_ID = 'service_5ige7zo';
+    const EMAILJS_TEMPLATE_ID = 'template_8zxnc7l';
 
     // Dynamically load EmailJS SDK if needed
     function loadEmailJSSDK() {
