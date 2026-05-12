@@ -692,3 +692,34 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
   }, { threshold: 0.4 });
   badges.forEach(b => io.observe(b));
 })();
+
+(function () {
+  const technologyCards = document.getElementById('technological-skills');
+  const skillCards = document.getElementById('technical-skills');
+
+  // Hide skillCards by-default, show technologyCards
+  if (technologyCards && skillCards) {
+    skillCards.style.display = 'none';
+    technologyCards.style.display = 'grid';
+
+    // Add click listeners to toggle between them
+    const techTab = document.getElementById('tab-technology');
+    const skillTab = document.getElementById('tab-skills');
+
+    if (techTab && skillTab) {
+      techTab.addEventListener('click', () => {
+        techTab.classList.add('active');
+        skillTab.classList.remove('active');
+        technologyCards.style.display = 'grid';
+        skillCards.style.display = 'none';
+      });
+
+      skillTab.addEventListener('click', () => {
+        skillTab.classList.add('active');
+        techTab.classList.remove('active');
+        skillCards.style.display = 'grid';
+        technologyCards.style.display = 'none';
+      });
+    }
+  }
+})();
