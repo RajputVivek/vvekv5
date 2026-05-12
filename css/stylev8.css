@@ -4180,3 +4180,7 @@ ul {
   border-color: rgba(110, 140, 255, 0.3);
   color: white;
 }
+
+.turnstile-wrap {
+  margin: 18px 0 10px 0px;
+}

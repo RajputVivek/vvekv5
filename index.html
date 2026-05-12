@@ -13,7 +13,8 @@
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/stylev6.css" />
+  <link rel="stylesheet" href="css/stylev8.css" />
+  <link rel="preconnect" href="https://challenges.cloudflare.com" />
 </head>
 
 <body>
@@ -1622,6 +1623,10 @@
               <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..."
                 required></textarea>
             </div>
+            <div class="turnstile-wrap">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAADNx9FAC83WvI4fk" data-theme="dark" data-size="flexible">
+              </div>
+            </div>
             <button type="submit" class="btn btn-primary btn-full" id="form-btn">
               <span class="s-text"><i class="fas fa-paper-plane"></i> Send Message</span>
               <span class="s-load" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
@@ -1629,7 +1634,8 @@
             </button>
           </form>
         </div>
-        <p class="sec-sub reveal-up" style="margin: 40px auto 0; max-width: 760px; text-align: center;">Currently building AI-powered systems while exploring the intersection of UX, scale, and human behavior.</p>
+        <p class="sec-sub reveal-up" style="margin: 40px auto 0; max-width: 760px; text-align: center;">Currently
+          building AI-powered systems while exploring the intersection of UX, scale, and human behavior.</p>
       </div>
     </section>
 
@@ -1795,6 +1801,7 @@
   </div><!-- /.cs-modal-overlay -->
 
   <script src="js/main.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 
 </html>
