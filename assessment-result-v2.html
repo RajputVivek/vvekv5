@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assessment Result — Omkar Almale | Select10X</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/assessment-result-v2.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ══ TOP NAV ══ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">
+          <span>S</span>
+        </div>
+        <span class="nav-logo-text">Select<span class="accent">10X</span></span>
+      </a>
+      <div class="nav-center">
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <a href="assessments-v2.html" class="bc-link">
+            <i class="fa-solid fa-grid-2"></i> Assessments
+          </a>
+          <i class="fa-solid fa-chevron-right bc-sep"></i>
+          <span class="bc-current">Fullstack Developer Technical Skills Assessment</span>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <div class="nav-attempt-pill">
+          <i class="fa-solid fa-rotate-right"></i> Attempt #1
+        </div>
+        <button class="nav-btn ghost" id="printBtn">
+          <i class="fa-solid fa-arrow-down-to-bracket"></i>
+          <span>Export PDF</span>
+        </button>
+        <button class="nav-btn primary" id="shareBtn">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>Share Report</span>
+        </button>
+        <div class="nav-avatar" title="Omkar Almale">OA</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <div class="result-hero">
+    <div class="hero-glow-orbs"></div>
+    <div class="hero-inner">
+
+      <!-- ── TOP ROW: Candidate identity bar ── -->
+      <div class="hero-identity-bar">
+        <div class="candidate-avatar-wrap">
+          <div class="candidate-avatar">OA</div>
+          <div class="avatar-status-ring pass"></div>
+        </div>
+        <div class="candidate-info">
+          <div class="candidate-name-row">
+            <h1 class="candidate-name">Omkar Almale</h1>
+            <span class="result-badge pass"><i class="fa-solid fa-circle-check"></i> Passed</span>
+            <span class="hire-badge strong-hire"><i class="fa-solid fa-star"></i> Strong Hire</span>
+          </div>
+          <div class="candidate-meta-row">
+            <span class="meta-item"><i class="fa-solid fa-envelope"></i> omkaralmale@gmail.com</span>
+            <span class="meta-divider"></span>
+            <span class="meta-item"><i class="fa-solid fa-building"></i> Select10x Inc</span>
+            <span class="meta-divider"></span>
+            <span class="meta-item"><i class="fa-regular fa-calendar-check"></i> 15 May 2026 · 23:49</span>
+          </div>
+          <div class="assessment-chips">
+            <span class="chip"><i class="fa-solid fa-file-lines"></i> Fullstack Developer Technical Skills</span>
+            <span class="chip"><i class="fa-solid fa-clock"></i> 62 min allotted</span>
+            <span class="chip time-chip"><i class="fa-solid fa-stopwatch"></i> 54 min 38 sec taken</span>
+            <span class="chip"><i class="fa-solid fa-list-check"></i> 17 scored questions</span>
+            <span class="chip"><i class="fa-solid fa-link"></i> Shared Link</span>
+            <span class="chip"><i class="fa-solid fa-file-pdf" style="color:#F87171"></i> <a href="#" onclick="return false" class="resume-link">SDE_OMKAR_ALMALE.pdf</a></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── BOTTOM ROW: Metrics ── -->
+      <div class="hero-metrics-bar">
+
+        <!-- Score ring -->
+        <div class="hero-ring-block">
+          <div class="score-ring-outer">
+            <svg viewBox="0 0 140 140" class="ring-svg" aria-label="Score: 76 out of 106">
+              <defs>
+                <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F97316"/>
+                  <stop offset="50%" stop-color="#FB923C"/>
+                  <stop offset="100%" stop-color="#FCD34D"/>
+                </linearGradient>
+                <filter id="ringGlow">
+                  <feGaussianBlur stdDeviation="3" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <circle cx="70" cy="70" r="56" class="ring-track"/>
+              <circle cx="70" cy="70" r="48" class="ring-inner-track"/>
+              <circle cx="70" cy="70" r="56" class="ring-fill" id="ringFill"
+                stroke-dasharray="352" stroke-dashoffset="352" filter="url(#ringGlow)"/>
+            </svg>
+            <div class="ring-center">
+              <div class="ring-score-wrap">
+                <span class="ring-val" id="ringVal">0</span>
+                <span class="ring-max">/106</span>
+              </div>
+              <span class="ring-pct" id="ringPct">0%</span>
+            </div>
+          </div>
+          <div class="ring-footer-label">Technical Score</div>
+          <div class="grade-pill A-plus"><i class="fa-solid fa-fire-flame-curved"></i> Excellent</div>
+        </div>
+
+        <!-- Divider -->
+        <div class="hero-divider"></div>
+
+        <!-- KPI cards row -->
+        <div class="hero-kpi-row">
+
+          <div class="hkpi-card" style="--delay:0ms">
+            <div class="hkpi-icon correct-bg"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="hkpi-body">
+              <div class="hkpi-val correct-color" id="kpiCorrect">0</div>
+              <div class="hkpi-label">Correct</div>
+              <div class="hkpi-sub">out of 17 scored</div>
+            </div>
+            <div class="hkpi-bar"><div class="hkpi-bar-fill correct-fill" style="width:70.6%"></div></div>
+          </div>
+
+          <div class="hkpi-card" style="--delay:50ms">
+            <div class="hkpi-icon partial-bg"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            <div class="hkpi-body">
+              <div class="hkpi-val partial-color">0</div>
+              <div class="hkpi-label">Partial</div>
+              <div class="hkpi-sub">partially correct</div>
+            </div>
+            <div class="hkpi-bar"><div class="hkpi-bar-fill partial-fill" style="width:0%"></div></div>
+          </div>
+
+          <div class="hkpi-card" style="--delay:100ms">
+            <div class="hkpi-icon wrong-bg"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div class="hkpi-body">
+              <div class="hkpi-val wrong-color" id="kpiWrong">0</div>
+              <div class="hkpi-label">Wrong / Skipped</div>
+              <div class="hkpi-sub">needs review</div>
+            </div>
+            <div class="hkpi-bar"><div class="hkpi-bar-fill wrong-fill" style="width:29.4%"></div></div>
+          </div>
+
+          <div class="hkpi-card" style="--delay:150ms">
+            <div class="hkpi-icon time-bg"><i class="fa-solid fa-hourglass-half"></i></div>
+            <div class="hkpi-body">
+              <div class="hkpi-val time-color">54:38</div>
+              <div class="hkpi-label">Time Taken</div>
+              <div class="hkpi-sub">of 62 min allotted</div>
+            </div>
+            <div class="hkpi-bar"><div class="hkpi-bar-fill time-fill" style="width:88%"></div></div>
+          </div>
+
+          <div class="hkpi-card" style="--delay:200ms">
+            <div class="hkpi-icon rank-bg"><i class="fa-solid fa-ranking-star"></i></div>
+            <div class="hkpi-body">
+              <div class="hkpi-val rank-color" id="kpiPct">0</div>
+              <div class="hkpi-label">Tech Score %</div>
+              <div class="hkpi-sub">71.7 percentile</div>
+            </div>
+            <div class="hkpi-bar"><div class="hkpi-bar-fill rank-fill" style="width:71.7%"></div></div>
+          </div>
+
+          <!-- AI Verdict card -->
+          <div class="hkpi-card hkpi-verdict" style="--delay:250ms">
+            <div class="hkpi-icon" style="background:rgba(249,115,22,0.18);color:#FB923C;">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="hkpi-body">
+              <div class="hkpi-val" style="color:#FB923C;font-size:1rem;">Strong Hire</div>
+              <div class="hkpi-label">AI Verdict</div>
+              <div class="hkpi-sub">Top 28.3% of candidates</div>
+            </div>
+            <div class="hkpi-bar"><div class="hkpi-bar-fill" style="width:71.7%;background:linear-gradient(90deg,#F97316,#FCD34D)"></div></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ MAIN LAYOUT ══ -->
+  <div class="result-layout">
+
+    <!-- ── SIDEBAR ── -->
+    <aside class="result-sidebar" id="resultSidebar">
+
+      <!-- Integrity / Proctoring -->
+      <div class="sidebar-widget integrity-widget">
+        <div class="widget-head">
+          <span class="widget-title">
+            <i class="fa-solid fa-shield-halved"></i>
+            Integrity Report
+          </span>
+          <span class="integrity-status clean">
+            <i class="fa-solid fa-check"></i> Clean
+          </span>
+        </div>
+        <div class="integrity-grid">
+          <div class="ig-item ok" title="Webcam was active throughout">
+            <div class="ig-icon"><i class="fa-solid fa-video"></i></div>
+            <span class="ig-label">Webcam Active</span>
+            <i class="fa-solid fa-check ig-check"></i>
+          </div>
+          <div class="ig-item ok" title="Full screen mode maintained">
+            <div class="ig-icon"><i class="fa-solid fa-desktop"></i></div>
+            <span class="ig-label">Full Screen</span>
+            <i class="fa-solid fa-check ig-check"></i>
+          </div>
+          <div class="ig-item ok" title="No copy-paste detected">
+            <div class="ig-icon"><i class="fa-solid fa-copy"></i></div>
+            <span class="ig-label">No Copy-Paste</span>
+            <i class="fa-solid fa-check ig-check"></i>
+          </div>
+          <div class="ig-item ok" title="Zero tab switches">
+            <div class="ig-icon"><i class="fa-solid fa-window-restore"></i></div>
+            <span class="ig-label">Tab Switches: 0</span>
+            <i class="fa-solid fa-check ig-check"></i>
+          </div>
+          <div class="ig-item ok" title="IP address was consistent">
+            <div class="ig-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <span class="ig-label">IP Consistent</span>
+            <i class="fa-solid fa-check ig-check"></i>
+          </div>
+        </div>
+        <!-- Snapshots mini strip -->
+        <div class="integrity-snaps-row">
+          <span class="igs-label"><i class="fa-solid fa-camera"></i> 32 Snapshots</span>
+          <button class="igs-view-btn" id="viewSnapshotsBtn">View all</button>
+        </div>
+        <div class="integrity-snaps-preview" id="snapsPreview">
+          <!-- 6 mini snap placeholders rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Skill breakdown -->
+      <div class="sidebar-widget">
+        <div class="widget-head">
+          <span class="widget-title">
+            <i class="fa-solid fa-chart-radar"></i>
+            Skill Breakdown
+          </span>
+        </div>
+        <div class="skill-bars-list" id="skillBars"></div>
+      </div>
+
+      <!-- Q Navigator -->
+      <div class="sidebar-widget">
+        <div class="widget-head">
+          <span class="widget-title">
+            <i class="fa-solid fa-list-ol"></i>
+            Questions
+          </span>
+          <span class="widget-count">25</span>
+        </div>
+        <div class="q-legend-row">
+          <span class="ql correct"><span class="qldot"></span>Correct (22)</span>
+          <span class="ql wrong"><span class="qldot"></span>Wrong (2)</span>
+          <span class="ql partial"><span class="qldot"></span>Partial (1)</span>
+        </div>
+        <div class="q-nav-grid" id="qNavigator"></div>
+      </div>
+
+      <!-- Assessment meta card -->
+      <div class="sidebar-widget meta-widget">
+        <div class="widget-head">
+          <span class="widget-title">
+            <i class="fa-solid fa-circle-info"></i>
+            Assessment Info
+          </span>
+        </div>
+        <div class="meta-rows">
+          <div class="meta-row">
+            <span class="mr-label">Given For</span>
+            <span class="mr-value">Select10x Inc</span>
+          </div>
+          <div class="meta-row">
+            <span class="mr-label">Status</span>
+            <span class="mr-value"><span class="status-pill completed">Completed</span></span>
+          </div>
+          <div class="meta-row">
+            <span class="mr-label">Taken On</span>
+            <span class="mr-value">15-05-2026 · 23:49</span>
+          </div>
+          <div class="meta-row">
+            <span class="mr-label">Attempt</span>
+            <span class="mr-value">#1</span>
+          </div>
+          <div class="meta-row">
+            <span class="mr-label">Score</span>
+            <span class="mr-value score-val">76 / 106 <span class="score-pct">(71.7%)</span></span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ── MAIN CONTENT ── -->
+    <main class="result-main">
+
+      <!-- Tab bar -->
+      <div class="result-tabs" id="resultTabs">
+        <button class="rtab active" data-tab="questions">
+          <i class="fa-solid fa-clipboard-question"></i>
+          <span>Questions & Answers</span>
+          <span class="rtab-count">25</span>
+        </button>
+        <button class="rtab" data-tab="analytics">
+          <i class="fa-solid fa-chart-bar"></i>
+          <span>Analytics</span>
+        </button>
+        <button class="rtab" data-tab="summary">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>AI Summary</span>
+        </button>
+        <button class="rtab" data-tab="snapshots">
+          <i class="fa-solid fa-camera"></i>
+          <span>Snapshots</span>
+          <span class="rtab-count">32</span>
+        </button>
+        <button class="rtab" data-tab="feedback">
+          <i class="fa-regular fa-comment-dots"></i>
+          <span>Feedback</span>
+        </button>
+      </div>
+
+      <!-- ══ TAB: Questions ══ -->
+      <div class="tab-panel active" id="tab-questions">
+
+        <div class="q-filterbar">
+          <div class="qf-search-wrap">
+            <i class="fa-solid fa-magnifying-glass qf-search-icon"></i>
+            <input type="text" id="qSearch" class="qf-search-input" placeholder="Search questions…" autocomplete="off"/>
+          </div>
+          <div class="qf-result-pills">
+            <button class="qfp active" data-qfilter="all">All <span class="qfp-n">25</span></button>
+            <button class="qfp" data-qfilter="correct">Correct <span class="qfp-n correct">22</span></button>
+            <button class="qfp" data-qfilter="wrong">Wrong <span class="qfp-n wrong">2</span></button>
+            <button class="qfp" data-qfilter="partial">Partial <span class="qfp-n partial">1</span></button>
+          </div>
+          <select class="qf-type-select" id="typeFilter">
+            <option value="all">All Types</option>
+            <option value="mcq">MCQ</option>
+            <option value="mrq">Multiple Response</option>
+            <option value="coding">Coding</option>
+            <option value="video">Video</option>
+            <option value="tabular">Tabular</option>
+            <option value="fitb">Fill in Blank</option>
+            <option value="descriptive">Descriptive</option>
+          </select>
+        </div>
+
+        <div class="question-list" id="questionList"></div>
+      </div>
+
+      <!-- ══ TAB: Analytics ══ -->
+      <div class="tab-panel" id="tab-analytics">
+        <div class="analytics-grid">
+
+          <div class="a-card span-full">
+            <div class="a-card-head">
+              <div class="a-card-title"><i class="fa-solid fa-chart-bar"></i> Score by Section</div>
+              <div class="a-card-meta">vs. candidate average</div>
+            </div>
+            <div class="a-chart-area" style="height:280px">
+              <canvas id="sectionChart"></canvas>
+            </div>
+          </div>
+
+          <div class="a-card">
+            <div class="a-card-head">
+              <div class="a-card-title"><i class="fa-solid fa-clock"></i> Time per Question Type</div>
+            </div>
+            <div class="donut-container">
+              <canvas id="timeChart"></canvas>
+            </div>
+            <div class="donut-legend-list" id="timeLegend"></div>
+          </div>
+
+          <div class="a-card">
+            <div class="a-card-head">
+              <div class="a-card-title"><i class="fa-solid fa-bullseye"></i> Accuracy Breakdown</div>
+            </div>
+            <div class="donut-container">
+              <canvas id="accuracyDonut"></canvas>
+              <div class="donut-overlay">
+                <span class="do-val">71%</span>
+                <span class="do-lbl">Accuracy</span>
+              </div>
+            </div>
+            <div class="donut-legend-list" id="accuracyLegend"></div>
+          </div>
+
+          <div class="a-card span-full">
+            <div class="a-card-head">
+              <div class="a-card-title"><i class="fa-solid fa-table-cells"></i> Performance Matrix</div>
+              <div class="a-card-meta">Score % by difficulty × question type</div>
+            </div>
+            <div class="perf-matrix" id="difficultyGrid"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ TAB: AI Summary ══ -->
+      <div class="tab-panel" id="tab-summary">
+        <div class="summary-grid">
+
+          <!-- AI verdict banner -->
+          <div class="ai-verdict-card span-full">
+            <div class="avc-glow"></div>
+            <div class="avc-inner">
+              <div class="avc-left">
+                <div class="avc-ai-badge">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>Radiance AI</span>
+                </div>
+                <h2 class="avc-title">AI Performance Summary</h2>
+                <p class="avc-body">Omkar demonstrates <strong>strong full-stack proficiency</strong> with a technical score of <strong>76/106 (71.7%)</strong>. Performance across JavaScript, React, and Node.js was notably solid — 12 of 17 scored questions answered correctly. His coding solutions show clean architecture and efficient time complexity. <br><br>Areas for improvement: 5 questions were wrong or skipped — primarily in database optimization and Redis data structures. Recommend focused study in distributed caching patterns before the senior-level panel.</p>
+              </div>
+              <div class="avc-right">
+                <div class="verdict-display strong-hire">
+                  <i class="fa-solid fa-handshake-simple"></i>
+                  <span class="vd-title">Strong Hire</span>
+                  <span class="vd-sub">AI Recommendation</span>
+                </div>
+                <div class="verdict-score-ring">
+                  <svg viewBox="0 0 80 80" class="vs-ring-svg">
+                    <circle cx="40" cy="40" r="34" class="vsr-track"/>
+                    <circle cx="40" cy="40" r="34" class="vsr-fill" id="vsrFill"
+                      stroke-dasharray="214" stroke-dashoffset="214"/>
+                  </svg>
+                  <div class="vsr-center">
+                    <span class="vsr-val">72%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill score cards -->
+          <div class="s-card">
+            <div class="s-card-head">
+              <span class="s-card-title">Skill Scores</span>
+            </div>
+            <div class="skill-score-grid" id="skillScoreCards"></div>
+          </div>
+
+          <!-- Comparison chart -->
+          <div class="s-card">
+            <div class="s-card-head">
+              <span class="s-card-title"><i class="fa-solid fa-users"></i> vs. All Candidates</span>
+            </div>
+            <div class="a-chart-area" style="height:220px;padding:16px">
+              <canvas id="comparisonChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="s-card span-full">
+            <div class="s-card-head">
+              <span class="s-card-title"><i class="fa-solid fa-timeline"></i> Assessment Timeline</span>
+            </div>
+            <div class="timeline-track" id="timelineBody"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ TAB: Snapshots ══ -->
+      <div class="tab-panel" id="tab-snapshots">
+        <div class="snaps-panel">
+          <div class="snaps-header">
+            <div class="snaps-info">
+              <i class="fa-solid fa-camera"></i>
+              <strong id="snapTotalCount">32</strong> webcam snapshots captured
+              <span class="snaps-date-range">· 16-05-2026 · 19:39 – 20:10</span>
+            </div>
+            <div class="snaps-integrity-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              All snapshots verified clean
+            </div>
+          </div>
+          <div class="snaps-grid" id="snapshotsGrid"></div>
+        </div>
+      </div>
+
+      <!-- ══ TAB: Feedback ══ -->
+      <div class="tab-panel" id="tab-feedback">
+        <div class="feedback-panel">
+
+          <!-- Rating cards -->
+          <div class="feedback-ratings-row">
+            <div class="fb-rating-card">
+              <div class="fbr-icon-wrap">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div class="fbr-content">
+                <div class="fbr-label">Overall Experience</div>
+                <div class="star-row" id="starsOverall"></div>
+                <div class="fbr-sublabel" id="sublabelOverall">4 out of 5</div>
+              </div>
+              <div class="fbr-score-bubble">4.0</div>
+            </div>
+
+            <div class="fb-rating-card">
+              <div class="fbr-icon-wrap">
+                <i class="fa-regular fa-circle-question"></i>
+              </div>
+              <div class="fbr-content">
+                <div class="fbr-label">Quality of Questions</div>
+                <div class="star-row" id="starsQuality"></div>
+                <div class="fbr-sublabel" id="sublabelQuality">5 out of 5</div>
+              </div>
+              <div class="fbr-score-bubble perfect">5.0</div>
+            </div>
+          </div>
+
+          <!-- Comment -->
+          <div class="fb-comment-card">
+            <div class="fb-comment-head">
+              <i class="fa-solid fa-comments"></i>
+              Candidate Feedback
+            </div>
+            <div class="fb-comment-body">
+              <div class="fb-quote-mark">"</div>
+              <p class="fb-comment-text">Questions were good!</p>
+              <div class="fb-comment-meta">
+                <span><i class="fa-regular fa-calendar"></i> Submitted on 15-05-2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback summary stat -->
+          <div class="fb-summary-strip">
+            <div class="fbss-item">
+              <span class="fbss-val">4.5</span>
+              <span class="fbss-label">Avg Rating</span>
+            </div>
+            <div class="fbss-sep"></div>
+            <div class="fbss-item">
+              <span class="fbss-val">2</span>
+              <span class="fbss-label">Categories</span>
+            </div>
+            <div class="fbss-sep"></div>
+            <div class="fbss-item">
+              <span class="fbss-val" style="color:var(--green)">Positive</span>
+              <span class="fbss-label">Sentiment</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="js/assessment-result-v2.js"></script>
+</body>
+</html>
