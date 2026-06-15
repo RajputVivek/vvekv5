@@ -359,7 +359,7 @@
 
     // EmailJS configuration
     const EMAILJS_USER_ID = 'ibdPGGKPPyd5cSbLS';
-    const EMAILJS_SERVICE_ID = 'service_dy8gelq';
+    const EMAILJS_SERVICE_ID = 'service_rjqupuv';
     const EMAILJS_TEMPLATE_ID = 'template_j4ruanv';
 
     // Dynamically load EmailJS SDK if needed
