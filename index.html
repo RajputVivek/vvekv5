@@ -22,7 +22,7 @@
   <!-- LOADER -->
   <div id="loader">
     <div class="loader-inner">
-      <span class="loader-logo">VK</span>
+      <div class="loader-logo">vvek<span class="logo-accent">.dev</span></div>
       <div class="loader-bar">
         <div class="loader-fill"></div>
       </div>
@@ -36,8 +36,10 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>VK<span class="logo-bracket">/&gt;</span>
+      <a href="/" class="nav-brand">
+        <div class="nav-logo">
+          vvek<span class="logo-accent">.dev</span>
+        </div>
       </a>
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
@@ -124,17 +126,181 @@
           </div>
         </div>
 
-        <!-- Right: avatar -->
-        <div class="hero-avatar reveal-right">
-          <div class="avatar-frame">
-            <div class="avatar-blob">
-              <img src="images/vivek-photo.png" alt="Vivek K — UI Developer" class="avatar-photo" />
+        <!-- Right: JoinCove Showcase -->
+        <!-- Right: JoinCove Showcase -->
+        <div class="hero-product-showcase reveal-right">
+          <!-- Ambient Background Elements -->
+          <div class="showcase-ambient-glow"></div>
+          <div class="showcase-ambient-highlight"></div>
+          <div class="showcase-noise"></div>
+
+          <div class="showcase-header">
+            <div class="product-badge">SHIPPED &bull; JUNE 2026</div>
+            <h2 class="product-title">
+              <img src="images/cove.png" alt="Cove Logo" class="cove-title-logo">
+              JoinCove
+            </h2>
+            <p class="product-subtitle">Private conversations. No accounts. No history.</p>
+            <p class="product-microcopy">A production-ready communication platform designed from scratch.</p>
+
+            <div class="product-tech-chips">
+              <span class="tech-chip">Privacy First</span>
+              <span class="tech-chip">Anonymous by Design</span>
+              <span class="tech-chip">React</span>
+              <span class="tech-chip">Cloudflare</span>
+              <span class="tech-chip">WebRTC</span>
+              <span class="tech-chip">Zero Knowledge</span>
             </div>
-            <div class="avatar-ring r1"></div>
-            <div class="avatar-ring r2"></div>
-            <div class="avatar-tag tag-react"><i class="fab fa-react"></i> React</div>
-            <div class="avatar-tag tag-css"><i class="fab fa-css3-alt"></i> CSS3</div>
-            <div class="avatar-tag tag-js"><i class="fab fa-js-square"></i> JS</div>
+          </div>
+
+          <div class="showcase-visuals">
+            <div class="showcase-browser" id="product-slideshow">
+              <div class="browser-top">
+                <span class="browser-dot close"></span>
+                <span class="browser-dot minimize"></span>
+                <span class="browser-dot expand"></span>
+              </div>
+              <div class="browser-content">
+                <!-- 1. Home Snapshot -->
+                <div class="browser-ss cove-snapshot snapshot-home active">
+                  <div class="c-main">
+                    <div class="c-left">
+                      <h1 class="c-hero-title">Private conversations.<br>No accounts.<br>No history.</h1>
+                      <div class="c-features">
+                        <div class="c-feat"><span>🔒</span> End-to-end encrypted</div>
+                        <div class="c-feat"><span>🎥</span> Secure Voice & Video Calls</div>
+                        <div class="c-feat"><span>🗑️</span> Messages disappear</div>
+                        <div class="c-feat"><span>👤</span> No account required</div>
+                        <div class="c-feat"><span>📱</span> No phone number</div>
+                        <div class="c-feat"><span>🛡️</span> Zero-knowledge architecture</div>
+                      </div>
+                      <div class="c-connect-box">
+                        <div class="c-connect-title">🔒 How to connect</div>
+                        <div class="c-steps">
+                          <span class="c-step"><span class="c-num">1</span> Room ID</span> <span
+                            class="c-arr">&rarr;</span>
+                          <span class="c-step"><span class="c-num">2</span> Private PIN</span> <span
+                            class="c-arr">&rarr;</span>
+                          <span class="c-step"><span class="c-num">3</span> Share both</span>
+                        </div>
+                        <p class="c-connect-desc">Only someone who enters the <strong>exact same Room ID and Private
+                            PIN</strong> can join your conversation.</p>
+                      </div>
+                      <div class="c-actions">
+                        <div class="c-btn-primary">Join Cove</div>
+                        <div class="c-btn-secondary">🔒 How to Connect &rarr;</div>
+                      </div>
+                      <div class="c-footer-text">
+                        No Signup &bull; No Phone Number &bull; No Ads &bull; No Tracking &bull; No History
+                      </div>
+                    </div>
+                    <div class="c-right">
+                      <div class="c-card">
+                        <div class="c-card-logo"><img src="images/cove.png" alt="Cove Logo" class="c-card-logo-img">
+                        </div>
+                        <!-- <h2 class="c-card-title">Cove</h2> -->
+                        <p class="c-card-sub"><strong>Encrypted before it leaves your device.</strong><br>Private
+                          conversations. No accounts. No history.</p>
+                        <div class="c-form">
+                          <label>Display Name</label>
+                          <div class="c-input type-name">&nbsp;</div>
+                          <label>Your Space (Room Name)</label>
+                          <div class="c-input type-room">&nbsp;</div>
+                          <label>Private PIN</label>
+                          <div class="c-input type-pin">&nbsp;</div>
+                          <div class="c-btn-card btn-click">Join Room &rarr;</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2. Login Snapshot -->
+                <div class="browser-ss cove-snapshot snapshot-login">
+                  <div class="c-card">
+                    <div class="c-card-logo"><img src="images/cove.png" alt="Cove Logo" class="c-card-logo-img"></div>
+                    <!-- <h2 class="c-card-title">Cove</h2> -->
+                    <p class="c-card-sub"><strong>Encrypted before it leaves your device.</strong><br>Private
+                      conversations. No accounts. No history.</p>
+                    <div class="c-form">
+                      <label>Display Name</label>
+                      <div class="c-input type-name">&nbsp;</div>
+                      <label>Your Space (Room Name)</label>
+                      <div class="c-input type-room">&nbsp;</div>
+                      <label>Private PIN</label>
+                      <div class="c-input type-pin">&nbsp;</div>
+                      <div class="c-btn-card btn-click">Join Room &rarr;</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3. Chat Snapshot -->
+                <div class="browser-ss cove-snapshot snapshot-chat">
+                  <div class="chat-header">
+                    <div class="chat-room-name">Room: moonl...</div>
+                    <div class="chat-header-actions">
+                      <div class="chat-status"><span class="status-dot"></span> Online</div>
+                      <div class="chat-icon"><i class="fas fa-phone-alt"></i></div>
+                      <div class="chat-icon"><i class="fas fa-video-slash"></i></div>
+                      <div class="chat-icon active-icon"><i class="fas fa-pen"></i></div>
+                      <div class="chat-btn-leave"><i class="fas fa-sign-out-alt"></i> Leave</div>
+                      <div class="chat-icon"><i class="fas fa-ellipsis-v"></i></div>
+                    </div>
+                  </div>
+                  <div class="chat-messages">
+                    <div class="msg-group msg-left">
+                      <div class="msg-author">vivek 👑</div>
+                      <div class="msg-bubble">Hi</div>
+                    </div>
+                    <div class="msg-group msg-right">
+                      <div class="msg-author">You</div>
+                      <div class="msg-bubble msg-purple">Hello</div>
+                    </div>
+                    <div class="msg-group msg-left">
+                      <div class="msg-author">Vivek 👑</div>
+                      <div class="msg-bubble">Party Tonight?</div>
+                      <div class="msg-meta burn-counter-1"></div>
+                    </div>
+                    <div class="msg-group msg-right">
+                      <div class="msg-author">You</div>
+                      <div class="msg-bubble msg-purple">Yayyy!</div>
+                      <div class="msg-meta msg-meta-right burn-counter-2"></div>
+                    </div>
+                    <div class="no-messages">No messages</div>
+                  </div>
+                  <div class="chat-input-area">
+                    <div class="chat-input-wrapper">
+                      <div class="chat-input-icon"><i class="fas fa-paperclip"></i></div>
+                      <div class="chat-input-icon"><i class="far fa-smile"></i></div>
+                      <div class="chat-input-text">Type a message...</div>
+                      <div class="chat-input-send"><i class="fas fa-paper-plane"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badges over the browser -->
+            <div class="float-badge f-badge-1">🔒 End-to-End Encryption</div>
+            <div class="float-badge f-badge-2">👤 No Accounts</div>
+            <div class="float-badge f-badge-3">🗑️ No History</div>
+            <div class="float-badge f-badge-4">🎥 Secure Voice & Video</div>
+            <div class="float-badge f-badge-5">🛡️ Zero Knowledge</div>
+          </div>
+
+          <div class="showcase-footer">
+            <div class="product-cta">
+              <a href="https://joincove.app" target="_blank" class="btn cove-btn">Launch Cove &rarr;</a>
+              <button class="btn cove-btn-outline cs-expand-btn" data-target="cs-modal-3">View Build Story</button>
+            </div>
+
+            <div class="builder-signature">
+              <img src="images/vivek-photo.png" alt="Vivek K." class="builder-photo">
+              <div class="builder-text">
+                <span class="builder-name">Designed & Engineered</span>
+                <span class="builder-roles">Vivek K.</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1795,6 +1961,47 @@
         </div>
         <div class="cs-modal-stack">
           <span>React</span><span>Chart.js</span><span>CSS3</span><span>REST API</span><span>CSV Export</span>
+        </div>
+      </div>
+    </div>
+    <div class="cs-modal" id="cs-modal-3" role="dialog" aria-modal="true" aria-label="JoinCove Build Story">
+      <button class="cs-modal-close" data-close><i class="fas fa-times"></i></button>
+      <div class="cs-modal-inner">
+        <span class="cs-modal-label">Product Build Story</span>
+        <h3 class="cs-modal-title">Engineering JoinCove</h3>
+        <p class="cs-modal-sub">A zero-knowledge, end-to-end encrypted communication platform engineered from scratch for ultimate privacy.</p>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-crosshairs"></i> The Objective</h4>
+          <p>The goal was to build a secure alternative to modern messaging apps that inherently distrusts the server. I wanted a platform where users could instantly create ephemeral rooms without phone numbers, emails, or accounts, guaranteeing that once a chat is closed, it's mathematically impossible to recover.</p>
+          <ul>
+            <li>No databases storing message payloads</li>
+            <li>No persistent user identities</li>
+            <li>Zero-knowledge server architecture</li>
+          </ul>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-lightbulb"></i> My Approach</h4>
+          <p>I started by designing a custom WebRTC signaling protocol using WebSockets. The server acts purely as a blind relay, passing encrypted WebRTC SDP offers and ICE candidates between peers. Once the peer-to-peer connection is established, the server steps out of the way entirely.</p>
+          <p>For the UI, I built a highly responsive React frontend wrapped in a custom glassmorphic design system. I implemented ephemeral "burn" animations to visually reinforce the privacy-first philosophy, ensuring the interface feels as secure and premium as the underlying cryptography.</p>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-code"></i> Key Technical Decisions</h4>
+          <ul>
+            <li><strong>Peer-to-Peer Encryption:</strong> All text, voice, and video streams are transmitted via WebRTC datachannels, strictly bypassing the server.</li>
+            <li><strong>Ephemeral Memory:</strong> The React state is configured to auto-purge upon tab closure or network disconnection. "Burn in X seconds" isn't just a UI trick; it triggers a hard memory wipe in the browser's heap.</li>
+            <li><strong>Edge Deployment:</strong> The signaling WebSocket server is deployed on the edge via Cloudflare Workers to guarantee ultra-low latency connection handshakes globally.</li>
+          </ul>
+        </div>
+        <div class="cs-modal-section">
+          <h4><i class="fas fa-chart-line"></i> Outcome & Impact</h4>
+          <div class="cs-impact-row">
+            <div class="cs-metric"><span class="cm-num">Zero</span><span class="cm-label">Bytes of data stored</span></div>
+            <div class="cs-metric"><span class="cm-num">&lt;50ms</span><span class="cm-label">Signaling latency</span></div>
+            <div class="cs-metric"><span class="cm-num">100%</span><span class="cm-label">Anonymous by design</span></div>
+          </div>
+        </div>
+        <div class="cs-modal-stack">
+          <span>React</span><span>WebRTC</span><span>WebSockets</span><span>Cloudflare</span><span>CSS3</span>
         </div>
       </div>
     </div>

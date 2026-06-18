@@ -884,3 +884,18 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
     }
   }
 })();
+
+/* ── PRODUCT SLIDESHOW ── */
+(function() {
+  const slideshow = document.getElementById("product-slideshow");
+  if (!slideshow) return;
+  const slides = slideshow.querySelectorAll(".browser-ss");
+  if (slides.length <= 1) return;
+  
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 6000);
+})();
